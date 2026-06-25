@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Benjamin Evans / SomberHighs portfolio: Python engineering, backend systems, audio tools, SDR, robotics, and creative technology." />
+  <meta property="og:title" content="Benjamin Evans | Software Portfolio" />
+  <meta property="og:description" content="Clean, professional portfolio for backend, audio, robotics, SDR, and creative technology projects." />
+  <meta property="og:type" content="website" />
+  <title>Benjamin Evans | Software Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top">BE<span>/</span>SH</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div id="nav-links" class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="button ghost">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Python engineer · creative technologist · builder of useful weird machines</p>
+        <h1>Backend systems, audio tools, robotics, and RF experiments built with practical engineering taste.</h1>
+        <p class="lead">I design software that is easy to test, straightforward to deploy, and hard to break. My work blends reliable backend architecture with hands-on systems projects, because apparently one discipline was too sane.</p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">View featured work</a>
+          <a class="button secondary" href="https://github.com/SomberHighs">GitHub profile</a>
+        </div>
+      </div>
+      <aside class="hero-panel reveal" aria-label="Profile summary card">
+        <div class="status-dot"></div>
+        <h2>Benjamin Evans</h2>
+        <p>Edmonds, WA</p>
+        <dl>
+          <div><dt>Focus</dt><dd>Python, FastAPI, automation</dd></div>
+          <div><dt>Interests</dt><dd>Audio DSP, SDR, robotics</dd></div>
+          <div><dt>Style</dt><dd>Clean architecture, pragmatic tooling</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section metrics reveal" aria-label="Portfolio highlights">
+      <article><strong>5+</strong><span>public project lanes</span></article>
+      <article><strong>Python</strong><span>backend + automation</span></article>
+      <article><strong>Hardware</strong><span>ESP32, SDR, robotics</span></article>
+      <article><strong>Audio</strong><span>MIDI, synths, analysis</span></article>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects positioned for hiring conversations.</h2>
+        <p>Each card is written like a recruiter or engineering lead might read it: problem, stack, outcome. Revolutionary concept, communicating value.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="card-top"><span>Backend</span><a href="https://github.com/SomberHighs/MermaidJS">Repository</a></div>
+          <h3>Nexus Notify</h3>
+          <p>A notification gateway concept using clean architecture to connect application events to providers like SendGrid and Twilio.</p>
+          <ul><li>FastAPI service boundaries</li><li>Async provider adapters</li><li>Testable domain layer</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-top"><span>Finance</span><a href="https://github.com/SomberHighs/market-pulse">Repository</a></div>
+          <h3>Market Pulse</h3>
+          <p>A market monitoring project positioned around data ingestion, signal extraction, and concise reporting.</p>
+          <ul><li>Data pipeline foundation</li><li>Readable analysis flow</li><li>Dashboard-ready structure</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-top"><span>Audio</span><a href="https://github.com/SomberHighs/SpectralKeys">Repository</a></div>
+          <h3>Spectral Keys</h3>
+          <p>An audio-facing project lane for spectral analysis, MIDI utilities, and production-friendly creative tooling.</p>
+          <ul><li>Music tech focus</li><li>Signal analysis angle</li><li>Portfolio-friendly niche</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="card-top"><span>Visualization</span><a href="https://github.com/SomberHighs/xy_oscilloscope">Repository</a></div>
+          <h3>XY Oscilloscope</h3>
+          <p>A visual signal project that shows comfort with real-time feedback, graphics, and experimental interfaces.</p>
+          <ul><li>Interactive visual systems</li><li>Signal display concepts</li><li>Creative engineering hook</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section split">
+      <div class="reveal">
+        <p class="eyebrow">Technical profile</p>
+        <h2>Useful stack, not résumé confetti.</h2>
+        <p>Hiring managers do not need a landfill of badges. They need proof that you can design, ship, debug, and explain systems without turning the repo into a haunted junk drawer.</p>
+      </div>
+      <div class="skill-cloud reveal">
+        <span>Python</span><span>FastAPI</span><span>AsyncIO</span><span>Pytest</span><span>Docker</span><span>Linux</span><span>GitHub Actions</span><span>SDR</span><span>ESP32</span><span>Robotics</span><span>Audio DSP</span><span>Automation</span>
+      </div>
+    </section>
+
+    <section id="process" class="section process">
+      <div class="section-heading reveal">
+        <p class="eyebrow">How I build</p>
+        <h2>Professional habits baked into the pitch.</h2>
+      </div>
+      <ol class="timeline reveal">
+        <li><strong>Model the domain.</strong><span>Separate the core rules from frameworks and adapters.</span></li>
+        <li><strong>Make it testable.</strong><span>Small functions, clear boundaries, repeatable commands.</span></li>
+        <li><strong>Document the path.</strong><span>Readable README, setup steps, architecture notes, screenshots.</span></li>
+        <li><strong>Ship the demo.</strong><span>A working interface beats a vague promise every single time.</span></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Interested in backend systems, audio software, or hardware-adjacent tools.</h2>
+      <p>Open to software work where reliability, debugging, and creative technical range matter.</p>
+      <a class="button" href="mailto:Zagmore123@gmail.com">Email Benjamin</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Benjamin Evans</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
